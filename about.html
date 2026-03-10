@@ -39,6 +39,7 @@
     .text-gradient {
       background: linear-gradient(to right, #1313ec, #6366f1);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   </style>
@@ -98,33 +99,50 @@
               I am a Computer Engineering student with a passion for technology and leadership. My journey began with +2 (SLC) in Computer Science, and I'm now pursuing my Bachelors' degree while actively participating in tech communities.
             </p>
             <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              I completed a 3-month internship at <span class="font-bold text-primary">Tech Company Name</span>, 
+              I completed a 3-month internship at Karnovation Inc., 
               where I gained practical industry experience working on real-world software development projects. 
-              Currently, I'm sharing my knowledge as a teacher at <span class="font-bold text-primary">ABC School</span>, 
-              helping students build their foundation in computer science and programming.
+              Currently, I'm sharing my knowledge as a teacher at Richa Co-Educational Home, helping students build their foundation in computer science and programming.
             </p>
             <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              I'm currently serving as the AWS Documentation Lead at AWS Cloud Club, TU, and have held multiple leadership positions including COESIS Secretary and Sagarmatha Tech-Fest Co-Secretary. I believe in continuous learning and giving back to the community.
+              I'm currently serving as the AWS Documentation Lead at AWS Cloud Club at TU, and have held multiple leadership positions including COESIS Secretary and Sagarmatha Tech-Fest Co-Secretary. I believe in continuous learning and giving back to the community.
             </p>
           </div>
-          <div class="flex gap-4 pt-4">
-            <div class="flex flex-col border-l-2 border-primary pl-4">
-              <span class="text-2xl font-bold">5+</span>
-              <span class="text-xs text-slate-500 uppercase tracking-tighter">Leadership Roles</span>
-            </div>
-            <div class="flex flex-col border-l-2 border-primary pl-4">
-              <span class="text-2xl font-bold">Mr. Friendship</span>
-              <span class="text-xs text-slate-500 uppercase tracking-tighter">Award Received</span>
-            </div>
-          </div>
+
+          
         </div>
-        <!-- Right Column: Journey & Languages -->
+        <!-- Right Column: Journey -->
         <div class="flex-1 lg:max-w-md">
           <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
             <span class="material-symbols-outlined text-primary">history</span>
             My Journey
           </h2>
           <div class="relative">
+            <!-- Teacher -->
+            <div class="grid grid-cols-[48px_1fr] gap-x-4 mb-2">
+              <div class="flex flex-col items-center">
+                <div class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/20">
+                  <span class="material-symbols-outlined text-xl">work</span>
+                </div>
+                <div class="h-full w-[2px] bg-slate-200 dark:bg-slate-800 mt-2"></div>
+              </div>
+              <div class="pb-8 pt-1">
+                <h4 class="font-bold">Teacher at Richa Co-Educational Home</h4>
+                <p class="mt-2 text-sm text-primary">Present</p>
+              </div>
+            </div>
+            <!-- Internship -->
+            <div class="grid grid-cols-[48px_1fr] gap-x-4 mb-2">
+              <div class="flex flex-col items-center">
+                <div class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800">
+                  <span class="material-symbols-outlined text-xl">work</span>
+                </div>
+                <div class="h-full w-[2px] bg-slate-200 dark:bg-slate-800 mt-2"></div>
+              </div>
+              <div class="pb-8 pt-1">
+                <h4 class="font-bold">Intern at Karnovation Inc.</h4>
+                <p class="mt-2 text-sm text-slate-500">3 months</p>
+              </div>
+            </div>
             <!-- Education -->
             <div class="grid grid-cols-[48px_1fr] gap-x-4 mb-2">
               <div class="flex flex-col items-center">
@@ -160,64 +178,36 @@
                 <div class="h-full w-[2px] bg-slate-200 dark:bg-slate-800 mt-2"></div>
               </div>
               <div class="pb-8 pt-1">
-                <h4 class="font-bold">Class Representative</h4>
-                <span class="text-sm font-medium text-slate-500">2018 - 2019</span>
-                <p class="mt-2 text-sm text-slate-500">Coordinated activities in high school and took active participation.</p>
-              </div>
-            </div>
-            <!-- Internship at Tech Company (NEW) -->
-            <div class="grid grid-cols-[48px_1fr] gap-x-4 mb-2">
-              <div class="flex flex-col items-center">
-                <div class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800">
-                  <span class="material-symbols-outlined text-xl">work</span>
-                </div>
-                <div class="h-full w-[2px] bg-slate-200 dark:bg-slate-800 mt-2"></div>
-              </div>
-              <div class="pb-8 pt-1">
-                <h4 class="font-bold">Intern at Tech Company Name</h4>
-                <span class="text-sm font-medium text-slate-500">3 Months</span>
-                <p class="mt-2 text-sm text-slate-500">Gained practical industry experience in software development and team collaboration.</p>
-              </div>
-            </div>
-            <!-- Teacher at ABC School (NEW) -->
-            <div class="grid grid-cols-[48px_1fr] gap-x-4">
-              <div class="flex flex-col items-center">
-                <div class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800">
-                  <span class="material-symbols-outlined text-xl">school</span>
-                </div>
-              </div>
-              <div class="pt-1">
-                <h4 class="font-bold">Teacher at ABC School</h4>
-                <span class="text-sm font-medium text-primary">Present</span>
-                <p class="mt-2 text-sm text-slate-500">Teaching computer science and helping students build their foundation in programming.</p>
+                <h4 class="font-bold">SEE</h4>
+                <span class="text-sm font-medium text-slate-500">Completed</span>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- Languages Section -->
-          <div class="mt-12">
-            <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-              <span class="material-symbols-outlined text-primary">language</span>
-              Languages
-            </h3>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all">
-                <p class="font-bold">Nepali</p>
-                <p class="text-xs text-slate-500">Native</p>
-              </div>
-              <div class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all">
-                <p class="font-bold">Newari</p>
-                <p class="text-xs text-slate-500">Native</p>
-              </div>
-              <div class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all">
-                <p class="font-bold">English</p>
-                <p class="text-xs text-slate-500">Fluent</p>
-              </div>
-              <div class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all">
-                <p class="font-bold">Hindi</p>
-                <p class="text-xs text-slate-500">Fluent</p>
-              </div>
-            </div>
+      <!-- Languages Section -->
+      <div class="mt-8 border-t border-slate-200 dark:border-slate-800 pt-12">
+        <h3 class="text-2xl font-bold mb-8 flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-primary">language</span>
+          Languages
+        </h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
+            <p class="font-bold text-lg mb-1">Nepali</p>
+            <p class="text-sm text-slate-500">Native</p>
+          </div>
+          <div class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
+            <p class="font-bold text-lg mb-1">Newari</p>
+            <p class="text-sm text-slate-500">Native</p>
+          </div>
+          <div class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
+            <p class="font-bold text-lg mb-1">English</p>
+            <p class="text-sm text-slate-500">Fluent</p>
+          </div>
+          <div class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
+            <p class="font-bold text-lg mb-1">Hindi</p>
+            <p class="text-sm text-slate-500">Fluent</p>
           </div>
         </div>
       </div>
@@ -227,7 +217,7 @@
     <section class="py-12 border-t border-slate-200 dark:border-slate-800">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-black mb-4 font-serif">Technical Skills</h2>
-        <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Building a strong foundation in computer science and cloud technologies.</p>
+        
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Programming Card -->
@@ -261,8 +251,8 @@
               <span class="text-slate-600 dark:text-slate-300">Java (Apps)</span>
               <div class="flex gap-1">
                 <div class="w-2 h-2 rounded-full bg-primary"></div>
-                <div class="w-2 h-2 rounded-full bg-primary"></div>
-                <div class="w-2 h-2 rounded-full bg-primary"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-300"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-300"></div>
                 <div class="w-2 h-2 rounded-full bg-slate-300"></div>
                 <div class="w-2 h-2 rounded-full bg-slate-300"></div>
               </div>
@@ -287,7 +277,7 @@
           <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
             <span class="material-symbols-outlined">cloud</span>
           </div>
-          <h3 class="text-xl font-bold mb-4">Tools & Cloud</h3>
+          <h3 class="text-xl font-bold mb-4">Cloud & More</h3>
           <div class="space-y-4">
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-slate-400">cloud</span>
@@ -331,15 +321,15 @@
         </p>
         <div class="flex gap-6">
           <a class="text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="https://www.linkedin.com/in/sachin-maharjan-3b20a1319">LinkedIn</a>
-          <a class="text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">GitHub</a>
-          <a class="text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Twitter</a>
+          <a class="text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="https://github.com/sachinmaharjan1">GitHub</a>
+          <a class="text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Facebook</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Back to Top Button -->
-  <button class="fixed bottom-20 md:bottom-8 right-8 size-12 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl shadow-primary/40 hover:-translate-y-1 transition-transform z-50 back-to-top">
+  <button class="fixed bottom-16 right-8 size-12 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl shadow-primary/40 hover:-translate-y-1 transition-transform z-50 back-to-top">
     <span class="material-symbols-outlined">expand_less</span>
   </button>
 
