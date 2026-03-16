@@ -58,6 +58,12 @@
       scrollbar-width: none;
     }
   </style>
+  <script>
+    // Apply theme immediately to prevent flash of wrong theme
+    if (sessionStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
 </head>
 
 <body
@@ -86,6 +92,21 @@
           href="contact.html">
           Hire Me
         </a>
+        <button
+          class="md:hidden p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors mobile-menu-toggle">
+          <span class="material-symbols-outlined text-[20px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      class="md:hidden hidden bg-white dark:bg-background-dark border-b border-slate-200 dark:border-slate-800 w-full mobile-menu">
+      <div class="flex flex-col px-6 py-4 gap-4">
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+        <a class="text-sm font-medium text-primary transition-colors" href="details.html">Experience</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
       </div>
     </div>
   </nav>
@@ -98,7 +119,8 @@
         Leadership & <span class="text-primary">Experience</span>
       </h1>
       <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-        Active participation in tech communities, teaching, internships, organizing events, and continuous learning through various roles.
+        Active participation in tech communities, teaching, internships, organizing events, and continuous learning
+        through various roles.
       </p>
     </div>
 
@@ -378,10 +400,29 @@
   </button>
 
   <script>
+    // Mobile menu toggle functionality
+    document.querySelectorAll('.mobile-menu-toggle').forEach(button => {
+      button.addEventListener('click', function () {
+        document.querySelector('.mobile-menu').classList.toggle('hidden');
+        const icon = button.querySelector('.material-symbols-outlined');
+        if (icon.textContent === 'menu') {
+          icon.textContent = 'close';
+        } else {
+          icon.textContent = 'menu';
+        }
+      });
+    });
+
     // Theme toggle functionality
     document.querySelectorAll('.theme-toggle').forEach(button => {
       button.addEventListener('click', function () {
-        document.documentElement.classList.toggle('dark');
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          sessionStorage.setItem('theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          sessionStorage.setItem('theme', 'dark');
+        }
       });
     });
 

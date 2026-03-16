@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html class="dark" lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Sachin Maharjan | About</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:wght@700;900&amp;display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:wght@700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -36,6 +41,7 @@
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
     }
+
     .text-gradient {
       background: linear-gradient(to right, #1313ec, #6366f1);
       -webkit-background-clip: text;
@@ -43,10 +49,19 @@
       -webkit-text-fill-color: transparent;
     }
   </style>
+  <script>
+    // Apply theme immediately to prevent flash of wrong theme
+    if (sessionStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased selection:bg-primary selection:text-white">
+
+<body
+  class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased selection:bg-primary selection:text-white">
   <!-- Navigation Bar -->
-  <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-background-dark/70">
+  <nav
+    class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-background-dark/70">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
         <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">
@@ -64,9 +79,25 @@
         <button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors theme-toggle">
           <span class="material-symbols-outlined text-[20px]">dark_mode</span>
         </button>
-        <a class="hidden sm:flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-primary/20" href="contact.html">
+        <a class="hidden sm:flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-primary/20"
+          href="contact.html">
           Hire Me
         </a>
+        <button
+          class="md:hidden p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors mobile-menu-toggle">
+          <span class="material-symbols-outlined text-[20px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      class="md:hidden hidden bg-white dark:bg-background-dark border-b border-slate-200 dark:border-slate-800 w-full mobile-menu">
+      <div class="flex flex-col px-6 py-4 gap-4">
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+        <a class="text-sm font-medium text-primary transition-colors" href="about.html">About</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="details.html">Experience</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
       </div>
     </div>
   </nav>
@@ -83,32 +114,39 @@
           </div>
           <div class="flex items-center gap-6 p-1">
             <div class="bg-primary/10 dark:bg-primary/20 rounded-xl p-1 shrink-0">
-              <div class="w-32 h-32 rounded-lg bg-center bg-cover border-2 border-primary/30" style="background-image: url('pp.jpg')"></div>
+              <div class="w-32 h-32 rounded-lg bg-center bg-cover border-2 border-primary/30"
+                style="background-image: url('pp.jpg')"></div>
             </div>
             <div>
               <h3 class="text-xl font-bold">Sachin Maharjan</h3>
               <p class="text-slate-500 dark:text-slate-400">Bachelors' in Computer Engineering</p>
               <div class="mt-2 flex gap-2">
-                <span class="px-2 py-1 rounded bg-slate-200 dark:bg-slate-800 text-[10px] font-bold">AWS Certified</span>
+                <span class="px-2 py-1 rounded bg-slate-200 dark:bg-slate-800 text-[10px] font-bold">AWS
+                  Certified</span>
                 <span class="px-2 py-1 rounded bg-slate-200 dark:bg-slate-800 text-[10px] font-bold">4 LANGUAGES</span>
               </div>
             </div>
           </div>
           <div class="prose prose-slate dark:prose-invert max-w-none">
             <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              I am a Computer Engineering student with a passion for technology and leadership. My journey began with +2 (SLC) in Computer Science, and I'm now pursuing my Bachelors' degree while actively participating in tech communities.
+              I am a Computer Engineering student with a passion for technology and leadership. My journey began with +2
+              (SLC) in Computer Science, and I'm now pursuing my Bachelors' degree while actively participating in tech
+              communities.
             </p>
             <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              I completed a 3-month internship at Karnovation Inc., 
-              where I gained practical industry experience working on real-world software development projects. 
-              Currently, I'm sharing my knowledge as a teacher at Richa Co-Educational Home, helping students build their foundation in computer science and programming.
+              I completed a 3-month internship at Karnovation Inc.,
+              where I gained practical industry experience working on real-world software development projects.
+              Currently, I'm sharing my knowledge as a teacher at Richa Co-Educational Home, helping students build
+              their foundation in computer science and programming.
             </p>
             <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              I'm currently serving as the AWS Documentation Lead at AWS Cloud Club at TU, and have held multiple leadership positions including COESIS Secretary and Sagarmatha Tech-Fest Co-Secretary. I believe in continuous learning and giving back to the community.
+              I'm currently serving as the AWS Documentation Lead at AWS Cloud Club at TU, and have held multiple
+              leadership positions including COESIS Secretary and Sagarmatha Tech-Fest Co-Secretary. I believe in
+              continuous learning and giving back to the community.
             </p>
           </div>
 
-          
+
         </div>
         <!-- Right Column: Journey -->
         <div class="flex-1 lg:max-w-md">
@@ -120,7 +158,8 @@
             <!-- Teacher -->
             <div class="grid grid-cols-[48px_1fr] gap-x-4 mb-2">
               <div class="flex flex-col items-center">
-                <div class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/20">
+                <div
+                  class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/20">
                   <span class="material-symbols-outlined text-xl">work</span>
                 </div>
                 <div class="h-full w-[2px] bg-slate-200 dark:bg-slate-800 mt-2"></div>
@@ -133,7 +172,8 @@
             <!-- Internship -->
             <div class="grid grid-cols-[48px_1fr] gap-x-4 mb-2">
               <div class="flex flex-col items-center">
-                <div class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800">
+                <div
+                  class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800">
                   <span class="material-symbols-outlined text-xl">work</span>
                 </div>
                 <div class="h-full w-[2px] bg-slate-200 dark:bg-slate-800 mt-2"></div>
@@ -146,7 +186,8 @@
             <!-- Education -->
             <div class="grid grid-cols-[48px_1fr] gap-x-4 mb-2">
               <div class="flex flex-col items-center">
-                <div class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/20">
+                <div
+                  class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/20">
                   <span class="material-symbols-outlined text-xl">school</span>
                 </div>
                 <div class="h-full w-[2px] bg-slate-200 dark:bg-slate-800 mt-2"></div>
@@ -159,7 +200,8 @@
             <!-- +2 -->
             <div class="grid grid-cols-[48px_1fr] gap-x-4 mb-2">
               <div class="flex flex-col items-center">
-                <div class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800">
+                <div
+                  class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800">
                   <span class="material-symbols-outlined text-xl">school</span>
                 </div>
                 <div class="h-full w-[2px] bg-slate-200 dark:bg-slate-800 mt-2"></div>
@@ -172,7 +214,8 @@
             <!-- Class Representative -->
             <div class="grid grid-cols-[48px_1fr] gap-x-4 mb-2">
               <div class="flex flex-col items-center">
-                <div class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800">
+                <div
+                  class="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800">
                   <span class="material-symbols-outlined text-xl">groups</span>
                 </div>
                 <div class="h-full w-[2px] bg-slate-200 dark:bg-slate-800 mt-2"></div>
@@ -193,19 +236,23 @@
           Languages
         </h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
+          <div
+            class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
             <p class="font-bold text-lg mb-1">Nepali</p>
             <p class="text-sm text-slate-500">Native</p>
           </div>
-          <div class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
+          <div
+            class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
             <p class="font-bold text-lg mb-1">Newari</p>
             <p class="text-sm text-slate-500">Native</p>
           </div>
-          <div class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
+          <div
+            class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
             <p class="font-bold text-lg mb-1">English</p>
             <p class="text-sm text-slate-500">Fluent</p>
           </div>
-          <div class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
+          <div
+            class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-primary/50 transition-all text-center bg-white/50 dark:bg-slate-900/50">
             <p class="font-bold text-lg mb-1">Hindi</p>
             <p class="text-sm text-slate-500">Fluent</p>
           </div>
@@ -217,12 +264,14 @@
     <section class="py-12 border-t border-slate-200 dark:border-slate-800">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-black mb-4 font-serif">Technical Skills</h2>
-        
+
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Programming Card -->
-        <div class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 hover:border-primary/50 transition-all group">
-          <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+        <div
+          class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 hover:border-primary/50 transition-all group">
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
             <span class="material-symbols-outlined">code</span>
           </div>
           <h3 class="text-xl font-bold mb-4">Programming</h3>
@@ -260,21 +309,29 @@
           </ul>
         </div>
         <!-- Web & Database Card -->
-        <div class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 hover:border-primary/50 transition-all group">
-          <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+        <div
+          class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 hover:border-primary/50 transition-all group">
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
             <span class="material-symbols-outlined">database</span>
           </div>
           <h3 class="text-xl font-bold mb-4">Web & Database</h3>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">HTML</span>
-            <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">CSS</span>
-            <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">MySQL</span>
-            <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">PostgreSQL</span>
+            <span
+              class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">HTML</span>
+            <span
+              class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">CSS</span>
+            <span
+              class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">MySQL</span>
+            <span
+              class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">PostgreSQL</span>
           </div>
         </div>
         <!-- Tools & Cloud Card -->
-        <div class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 hover:border-primary/50 transition-all group">
-          <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+        <div
+          class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 hover:border-primary/50 transition-all group">
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
             <span class="material-symbols-outlined">cloud</span>
           </div>
           <h3 class="text-xl font-bold mb-4">Cloud & More</h3>
@@ -301,11 +358,18 @@
       <div class="bg-primary/5 dark:bg-primary/10 rounded-2xl p-8 border border-primary/20">
         <h3 class="text-2xl font-bold mb-6 text-center">Soft Skills</h3>
         <div class="flex flex-wrap justify-center gap-4">
-          <span class="px-5 py-2 bg-white dark:bg-slate-800 rounded-full text-sm font-bold shadow-sm hover:bg-primary hover:text-white transition-all cursor-default">Fast Learner</span>
-          <span class="px-5 py-2 bg-white dark:bg-slate-800 rounded-full text-sm font-bold shadow-sm hover:bg-primary hover:text-white transition-all cursor-default">Teamwork</span>
-          <span class="px-5 py-2 bg-white dark:bg-slate-800 rounded-full text-sm font-bold shadow-sm hover:bg-primary hover:text-white transition-all cursor-default">Leadership</span>
-          <span class="px-5 py-2 bg-white dark:bg-slate-800 rounded-full text-sm font-bold shadow-sm hover:bg-primary hover:text-white transition-all cursor-default">Communication</span>
-          <span class="px-5 py-2 bg-white dark:bg-slate-800 rounded-full text-sm font-bold shadow-sm hover:bg-primary hover:text-white transition-all cursor-default">Problem Solving</span>
+          <span
+            class="px-5 py-2 bg-white dark:bg-slate-800 rounded-full text-sm font-bold shadow-sm hover:bg-primary hover:text-white transition-all cursor-default">Fast
+            Learner</span>
+          <span
+            class="px-5 py-2 bg-white dark:bg-slate-800 rounded-full text-sm font-bold shadow-sm hover:bg-primary hover:text-white transition-all cursor-default">Teamwork</span>
+          <span
+            class="px-5 py-2 bg-white dark:bg-slate-800 rounded-full text-sm font-bold shadow-sm hover:bg-primary hover:text-white transition-all cursor-default">Leadership</span>
+          <span
+            class="px-5 py-2 bg-white dark:bg-slate-800 rounded-full text-sm font-bold shadow-sm hover:bg-primary hover:text-white transition-all cursor-default">Communication</span>
+          <span
+            class="px-5 py-2 bg-white dark:bg-slate-800 rounded-full text-sm font-bold shadow-sm hover:bg-primary hover:text-white transition-all cursor-default">Problem
+            Solving</span>
         </div>
       </div>
     </section>
@@ -320,8 +384,10 @@
           2026 Sachin Maharjan. Built with passion.
         </p>
         <div class="flex gap-6">
-          <a class="text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="https://www.linkedin.com/in/sachin-maharjan-3b20a1319">LinkedIn</a>
-          <a class="text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="https://github.com/sachinmaharjan1">GitHub</a>
+          <a class="text-slate-400 hover:text-primary transition-colors text-sm font-medium"
+            href="https://www.linkedin.com/in/sachin-maharjan-3b20a1319">LinkedIn</a>
+          <a class="text-slate-400 hover:text-primary transition-colors text-sm font-medium"
+            href="https://github.com/sachinmaharjan1">GitHub</a>
           <a class="text-slate-400 hover:text-primary transition-colors text-sm font-medium" href="#">Facebook</a>
         </div>
       </div>
@@ -329,22 +395,43 @@
   </footer>
 
   <!-- Back to Top Button -->
-  <button class="fixed bottom-16 right-8 size-12 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl shadow-primary/40 hover:-translate-y-1 transition-transform z-50 back-to-top">
+  <button
+    class="fixed bottom-16 right-8 size-12 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl shadow-primary/40 hover:-translate-y-1 transition-transform z-50 back-to-top">
     <span class="material-symbols-outlined">expand_less</span>
   </button>
 
   <script>
-    // Theme toggle functionality
-    document.querySelectorAll('.theme-toggle').forEach(button => {
-      button.addEventListener('click', function() {
-        document.documentElement.classList.toggle('dark');
+    // Mobile menu toggle functionality
+    document.querySelectorAll('.mobile-menu-toggle').forEach(button => {
+      button.addEventListener('click', function () {
+        document.querySelector('.mobile-menu').classList.toggle('hidden');
+        const icon = button.querySelector('.material-symbols-outlined');
+        if (icon.textContent === 'menu') {
+          icon.textContent = 'close';
+        } else {
+          icon.textContent = 'menu';
+        }
       });
     });
-    
+
+    // Theme toggle functionality
+    document.querySelectorAll('.theme-toggle').forEach(button => {
+      button.addEventListener('click', function () {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          sessionStorage.setItem('theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          sessionStorage.setItem('theme', 'dark');
+        }
+      });
+    });
+
     // Back to top functionality
-    document.querySelector('.back-to-top')?.addEventListener('click', function() {
+    document.querySelector('.back-to-top')?.addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
+
 </html>
